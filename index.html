@@ -5,75 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skrot och Korn startsida</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="css/alla.css" rel="stylesheet">
 </head>
-<body>
-    <center>
-        <table border="0">
-            <tr>
-                <th><a href="startsida.html">startsida</a>|</th>
-                <th> <a href="produkter.html">produkter</a>|</th>
-                <th><a href="media.html">media</a>|</th>
-                <th><a href="kontaktaoss.html">kontakta oss</a></th>
-            </tr>
-        
-        </table>
-
-    <h1>Skrot och korn</center></h1>
+<!--meny java-->
+<body onload="buildmenu()">
+    <ul id="menu"></ul>
+    
+    <script src="js/script.js"></script>
    
- 
-       <center><img src="IMAGES/Personalen.png" width="200"></center>
+    <section class="holygrail">
+     <!--fungerar som en div-->
+     <header class="pageheader"> <h1 class="mainheader">Skrot och Korn</h1>
+        <!--kan ha en header som ser annorlunda ut på så vis-->
 
-         
+   
+        <div> <img src="IMAGES/skrot&korn Logo.png" alt="skrotokorn" height="35" class="logga"></div>
+    <nav>
+        <ul class="menu">
+           <li>
+            <a href="index.html" target="index">startsida</a>
+           </li> 
+           <li><a href="produkter.html" target="index">produkter</a>
+           </li>
+           <li> <a href="media.html" target="index">media</a></li>
+           <li><a href="kontaktaoss.html" target="index">kontakta oss</a></li>
+        </ul>
+    </nav>
+  
+     </header>
+     
+   
+ <!--sökruta-->
+      <nav class="sidebar">
 
-        </table>
+       <div> <form role="search" id="form">
+        <input type="search" id="query" name="q"
+         placeholder="Sök..."
+         aria-label="Search through site content">
+        <button>
+          <svg viewBox="0 0 1024 1024">
+            <path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+        </button>
+      </form>
+        </div> </div>
+        </nav>
+
        
-    <center><H2> Om oss</H2></center>
+       <main>
+        
+        <div class="myDiv" class="clearfix">
+    <H2 id="om-oss" class="clear:left"> Om oss</H2>
 
-    <center>
-        <table border="0">
- 
-            <tr><th> <h2></h2></th>
-                <th><h2></h2></th>
-                </tr> 
-                <td><p> Skrot och Korn AB är ett väletablerat företag <br>
-                    med över 10 års erfarenhet av försäljning och <br>
+    
+    <img class="bild floating" src="IMAGES/Personalen.png" alt="personalen">
+        <p>Skrot och Korn AB är ett väletablerat företag
+                    med över 10 års erfarenhet av försäljning och 
                     service av grävskopor, lyftkranar och lastbilar.
-         <br> Vi erbjuder ett brett utbud av maskiner från <br>
-         ledande tillverkare, och vi kan alltid erbjuda dig <br>
-          en maskin som passar dina behov och budget.</br></td> </center>
-    
-   <center> <td><p> <ul></ul> <br><center>Varför ska ni välja oss?</center></br>
-       <center> <li>Vi har ett stort utbud</li></center>
-       <center><li>Konkurrenskraftiga priser</li></center>
-       <center> <li>Vi har en hög servicenivå</li> </center>
-    </ul>
-        </p></td> </center>
-    
-    </tr></table>
+          Vi erbjuder ett brett utbud av maskiner från 
+         ledande tillverkare, och vi kan alltid erbjuda dig 
+          en maskin som passar dina behov och budget.</p>
 
-   <center><p>Prenumerera på nyhetsbrevet!</p></center>
-<!--lägg in knapp css-->
+          <ul id="varföross"><p>Varför ska ni välja oss?</p>
+            <li id="prick">Vi har ett stort utbud</li>
+            <li id="prick">Konkurrenskraftiga priser</li>
+            <li id="prick">Vi har en hög servicenivå</li>
+        </ul>
 
-
-<center> 
-    <img src="IMAGES/Kontoret.png" width="200">
-    <h2>Vi erbjuder</h2>
-    <p>Vi har ett stort nätverk av kontakter och kan alltid erbjuda dig den bästa lösningen för dina behov.
-        <br>Våra kunder är allt från små enmansföretag till stora koncerner inom byggbranschen, anläggningsbranschen och transportbranschen.</br></p>
-        
-         <p><ul></ul><br>Våra tjänster</br></p> 
-        
-      
-        <li>Försäljning av grävskopor, lyftkranar och lastbilar</li>
-        <li>Service och reparation av byggmaskiner</li>
-        <li>Värdering av maskiner</li>
-    </ul> </center>
-
+        <p><input type="checkbox" id="nyhetsbrev" name="selector" value="ja">
+      <label for="nyhetsbrev">Prenumerera på nyhetsbrevet!</label></p>
+       
+    </div>
+   
     
 
   
-    <p>&copy; 2024 Micaela Reuterswärd</p>
 
+<div class="myDiv2" class="clearfix" ></div>
+ 
+    <img class=" foto floating" src="IMAGES/Kontoret.png" >
+    <h2 id="vierbjuder" class="clear:left">Vi erbjuder</h2>
+    <div>Vi har ett stort nätverk av kontakter och kan alltid erbjuda dig den bästa lösningen för dina behov.
+        Våra kunder är allt från små enmansföretag till stora koncerner inom byggbranschen, anläggningsbranschen och transportbranschen.</p>
+        
+         <ul class="våratjänster"><p>Våra tjänster</p> 
+        
+      
+        <li id="vt">Försäljning av grävskopor, lyftkranar och lastbilar</li>
+        <li id="vt">Service och reparation av byggmaskiner</li>
+        <li id="vt">Värdering av maskiner</li>
+    </ul> 
+</div>
+</main>
+<!--reklam eller aside-->    
+<aside>
+    <img class="annons " src="IMAGES/Grön Hus Ikon Bygg Logga.png">
+    <img class="annons" src="IMAGES/everythingiscanceled.png">
+    <img class="annons" src="IMAGES/for a good time.png">
+   
+</aside>
+
+<!--footer-->
+<footer>
+    
+    <div> <img src="IMAGES/skrot&korn Logo.png" alt="skrotokorn" height="35" class="logga"></div>
+
+    <div id="copyn">&copy; 2024 Micaela Reuterswärd</div>
+<div class="horisontellf" >
+    <div class="footerbox">Hitta hit<br><br>Tomtebodavägen<br>3A<br>118 98</div>
+    <div class="footerbox2">Vi erbjuder<br><br>Transport<br> Bortforsling</div>
+    <div class="footerbox3">Kontakta oss<br><br> &#9743; 000-000 00 00 <br>&#128386; skrotochkorn@mail.se</div>
+    <div class="footerbox4">Följ oss<br><br> facebook<br> insta<br> youtube</div>
+    </div>
+
+    <div class="betalningsmetod">
+    <div class="fotbox" > Betalningsbetoder </div>
+</div>
+</footer>
+</section>
 
 </body>
 </html>

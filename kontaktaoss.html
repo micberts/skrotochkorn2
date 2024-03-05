@@ -3,176 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skrot&Korn</title>
-
-    <!--favicon fungerar ej, varför??-->
-    <link rel="icon" type="IMAGES/skrotokorn.png" href="/images/favicon.icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+    <title>Media</title>
+    <link rel="stylesheet" href="css/kontaktaoss.css">
+    <link href="css/alla.css" rel="stylesheet">
 </head>
-<style>
-    #myHeader {
-      background-color: rgb(36, 160, 123);
-      color: black;
-      padding: 40px;
-      text-align: center;
-    } 
-    </style>
-    <!--För headern CSS? -->
-<body>
-    <center>
-    <table border="0">
-        <tr>
-            <th><a href="startsida.html">startsida</a>|</th>
-            <th> <a href="produkter.html">produkter</a>|</th>
-            <th><a href="media.html">media</a>|</th>
-            <th><a href="kontaktaoss.html">kontakta oss</a></th>
-        </tr>
+<body onload="buildmenu()">
+   
+    
+    <script src="js/script.js"></script>
+
+    <section class="holygrail">
+     <!--fungerar som en div-->
+     <header class="pageheader"> <h1 class="mainheader">Skrot och Korn</h1>
+        <!--kan ha en header som ser annorlunda ut på så vis-->
+
+   
+        <div> <img src="IMAGES/skrot&korn Logo.png" alt="skrotokorn" height="35" class="logga"></div>
+    <nav>
+        <ul class="menu">
+           <li>
+            <a href="index.html" target="index">startsida</a>
+           </li> 
+           <li><a href="produkter.html" target="index">produkter</a>
+           </li>
+           <li> <a href="media.html" target="index">media</a></li>
+           <li><a href="kontaktaoss.html" target="index">kontakta oss</a></li>
+        </ul>
+    </nav>
+  
+     </header>
+     
+   
+ <!--sökruta-->
+      <nav class="sidebar">
+
+       <div> <form role="search" id="search">
+        <input type="search" id="query" name="q"
+         placeholder="Sök..."
+         aria-label="Search through site content">
+        <button>
+          <svg viewBox="0 0 1024 1024">
+            <path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+        </button>
+      </form>
+        </div> </div>
+        </nav>
+
        
-    </table> 
-    <H1 id="myHeader">Skrot och Korn</H1></center>
+       <main>
+
   
 <h2>Kontakta oss</h2>
     
 
-        
-    <form action="/action_page.php">
+    <div>   
+    <form action="/action_page.php" role="kontakt" class="fname">
         <label for="fname">Namn*:</label><br></form>
-        <input type="text" id="fname" name="fname"><br>
+        <input type="text" class="fname" name="fname"><br>
         <label for="fname">Adress:</label><br>
-        <input type="text" id="lname" name="lname"><br>
+        <input type="text" class="lname" name="lname"><br>
         <label for="lname">Mail*:</label><br>
-        <input type="text" id="lname" name="lname"><br>
+        <input type="text" class="lname" name="lname"><br>
         <label for="fname">Telefon*:</label><br>
-        <input type="text" id="lname" name="lname"><br> <br>
+        <input type="text" class="lname" name="lname" aria-colspan="20px"><br> <br>
         
         <div>
-            <input type="radio" id="f-option" name="selector">
-            <label for="f-option">Bli kontaktad via telefon</label>
+            <input type="checkbox" name="newsletter" id="neewletter" value="ja">
+            <label for="newsletter"> Vill du bli kontaktad via telefon?</label>
             
             <div class="check"></div><br>
 
         <label for="fname">Företagsnamn:</label><br>
-        <input type="text" id="lname" name="lname"><br><br>
+        <input type="text" id="lname" name="lname" ><br><br>
 
         <div>
-            <input type="radio" id="f-option" name="selector">
+            <input type="radio" id="f-option" name="selector" value="1-100">
             <label for="f-option">1 till 100 anställda</label>
-            <div class="check"></div> <br>
+            <div clas></div> <br>
 
             <div>
-                <input type="radio" id="f-option" name="selector">
+                <input type="radio" id="f-option" name="selector" value="100-1000">
                 <label for="f-option">100 till 1000 anställda</label>
                 <div class="check"></div><br>
            
                 <div>
-                <input type="radio" id="f-option" name="selector">
+                <input type="radio" id="f-option" name="selector" value="1000 and more">
                 <label for="f-option">1000 anställda eller mer</label>
-                <div class="check"></div><br>
-       
-        <input type="submit" value="Skicka"><br><br><br><br>
+                <div class="check"></div> <br>
+                <form action="/action_page.php">
+       <div><input type="submit" value="Skicka" class="ifylld"></div><br>
         
-  </form>
- <th><label for="fname">Frågor?</label><br></th> 
+  </form></div> 
+ 
+ 
+ <div>
+ 
+    <label for="info"></label> Har du några frågor?</label><br>
+    <textarea id="info" name="info" cols="60" rows="5"></textarea><br><br>
         <form action="/action_page.php">
-            <input type="text" id="fname" name="fname"><br><br>
-            <form action="/action_page.php">
-                <input type="text" id="fname" name="fname"><br><br>
-        <input type="submit" value="Maila">
-        </form><br><br>
+          
+            <input type="text" id="fname" name="fname" cols="20"><br><br>
+    <input type="submit" value="Maila" class="ifylld">
+    </form>
+    </div>
+        <img src="IMAGES/Skärmbild 2024-02-08 162451.png" width="250">
 
-    </tr>
-    </table>
         <!--Hitta hit-->
        
-        <table border="0">
- 
-            <tr><th><img src="IMAGES/Skärmbild 2024-02-08 162451.png" width="500"></th>
-                <tr><td><form action="/action_page.php"><input type="submit" value="Hitta hit">
-                </form> </form> </td></tr>
-</tr></table>
+        <div>
+                <link="https://kartor.eniro.se"target="newsbox">Hitta hit</link></div>
+                <iframe name="newsbox" class="newswindow"></iframe>
+                <div><form action="/action_page.php"><input type="submit" value="Hitta hit" class="ifylld">
+                </form></div>
+</div>
 
      <!--Våra medarbetare-->   
-     <H2>Vår Personal<H2><br>
-     <table border="0">
- 
-        <tr><th><img src="IMAGES/pexels-andrea-piacquadio-3767392.jpg" width="200"></th>
-       
-         <th><img src="IMAGES/pexels-andrea-piacquadio-3777946.jpg" width="200"></th>
-         
-         <th><img src="IMAGES/pexels-andrea-piacquadio-3786525.jpg" width="200"></th>
-
-         <th><img src="IMAGES/pexels-andrea-piacquadio-3789888.jpg" width="200"></th>
-
-     </tr>
-     <tr>
-         <td><center>Kari &#128386; </center></td>
-         <td><center>Pelle&#128386;</center></td>
-         <td><center>Kajsa&#128386;</center></td>
-         <td><center>Hasse&#128386;</center></td></tr>
-
-         </table>
-         <br></br>
-
-        
-
-
-  <!-- Site footer -->
-
-   
-        
-      </div>
-      <hr>
+     <H2>Vår Personal<H2>
+     <div class="bildgrid">
+        <div class="grid-item"><img src="IMAGES/pexels-andrea-piacquadio-3767392.jpg" width="200"><br>Kari &#128386;</div>
+        <div class="grid-item"><img src="IMAGES/pexels-andrea-piacquadio-3777946.jpg" width="200"><br>Pelle&#128386;</div>
+        <div class="grid-item"><img src="IMAGES/pexels-andrea-piacquadio-3786525.jpg" width="200"><br>Kajsa&#128386;</div>
+        <div class="grid-item"><img src="IMAGES/pexels-andrea-piacquadio-3789888.jpg" width="200"><br>Hasse&#128386;</div>
     </div>
-    <div class="col-xs-6 col-md-3">
-      
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-sm-6 col-xs-12">
-          
-          <h4> &#128756;Skrot och Korn</h4>
-        </div>
-
-        <div class="col-md-4 col-sm-6 col-xs-12">
-            <table border="0">
-
-                <tr>
-            <ul class="footer-links">
-                 <th><a href="startsida.html">Hitta hit</a>|</th>
-                <th><a href="startsida.html">Vi erbjuder</a> |</th>
-                    <th> <a href="kontaktaoss.html">Kontakta oss</a>|</th>
-                        <th> <a href="media.html">Media</a>|</th>
-                           <th><a href="Följ oss">Följ oss</a>|</th>
-                                <th><a href="Följ oss">Betalningsmetoder</a></th>
+  
+    
+        
+        </main>
+        <!--reklam eller aside-->    
+        <aside>
+            <img class="annons " src="IMAGES/Grön Hus Ikon Bygg Logga.png">
+            <img class="annons" src="IMAGES/everythingiscanceled.png">
+            <img class="annons" src="IMAGES/for a good time.png">
+           
+        </aside>
+        
+        <!--footer-->
+        <footer>
             
-              </ul>
-            </tr>
-            
+            <div> <img src="IMAGES/skrot&korn Logo.png" alt="skrotokorn" height="35" class="logga"></div>
+        
+            <div id="copyn">&copy; 2024 Micaela Reuterswärd</div>
+        <div class="horisontellf" >
+            <div class="footerbox">Hitta hit<br><br>Tomtebodavägen<br>3A<br>118 98</div>
+            <div class="footerbox2">Vi erbjuder<br><br>Transport<br> Bortforsling</div>
+            <div class="footerbox3">Kontakta oss<br><br> &#9743; 000-000 00 00 <br>&#128386; skrotochkorn@mail.se</div>
+            <div class="footerbox4">Följ oss<br><br> facebook<br> insta<br> youtube</div>
             </div>
-            
-                <tr>
-          <ul class="social-icons">
-            
-            <td><center><p>Tomtebodavägen 3A</p>118 65</p><br></center></td>
-               <td> <center>Transport <br> Bortforsling</center></td>
-           <td><center> &#128379; 000-00 00 00<br> &#128386; skrot&korn@ki.se</center> </td>
-           <td></td>
-    <td><center><p>&#128654;</p><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
-        <p>&#128512;</p><a class="facebook" href="#"><i class="fa fa-facebook"></i></a> 
-        <p>&#128668;</p><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a>
-        <p>&#128652;</p><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></td>
-        <td><center><p>&#128179;</p><p>&#128176;</p><p>&#128181;</p></center></td>
-    </center></td> 
-        </tr>   
+        
+            <div class="betalningsmetod">
+            <div class="fotbox" > Betalningsbetoder </div>
         </div>
-    </table>
-      </div>
-      <p class="copyright-text">&copy; Skrot och Korn
-    </p>
-      <p><p>&copy; 2024 Micaela Reuterswärd</p></p>
-    </div>
-</footer>
-</body>
-</html>
+        </footer>
+        </section>
+        
+        </body>
+        </html>

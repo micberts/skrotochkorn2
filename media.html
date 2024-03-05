@@ -4,75 +4,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Media</title>
+  <link rel="stylesheet" href="css/media.css">
+  <link href="css/alla.css" rel="stylesheet">
+
 </head>
 
-<body>
-  <center>
-    <table border="0">
-      <tr>
-        <th><a href="startsida.html">startsida</a>|</th>
-        <th> <a href="produkter.html">produkter</a>|</th>
-        <th><a href="media.html">media</a>|</th>
-        <th><a href="kontaktaoss.html">kontakta oss</a></th>
-      </tr>
+<body onload="buildmenu()">  
+ <script src="js/script.js"></script>
 
-    </table>
+  <section class="holygrail">
+    <!--fungerar som en div-->
+    <header class="pageheader"> <h1 class="mainheader">Skrot och Korn</h1>
+       <!--kan ha en header som ser annorlunda ut på så vis-->
 
-    <H1>Skrot och Korn</H1>
-  </center>
-  <center>
-    <h2>Såhär använder du våra maskiner</h2>
+  
+       <div> <img src="IMAGES/skrot&korn Logo.png" alt="skrotokorn" height="35" class="logga"></div>
+   <nav>
+       <ul class="menu">
+          <li>
+           <a href="index.html" target="index">startsida</a>
+          </li> 
+          <li><a href="produkter.html" target="index">produkter</a>
+          </li>
+          <li> <a href="media.html" target="index">media</a></li>
+          <li><a href="kontaktaoss.html" target="index">kontakta oss</a></li>
+       </ul>
+   </nav>
+ 
+    </header>
+    
+  
+<!--sökruta-->
+     <nav class="sidebar">
 
-    <P><img src="IMAGES/instruktionsvideo.png" width=500></P>
-
-    <table border="0">
-
-      <tr>
-        <th> <iframe width="560" height="315" src="https://www.youtube.com/embed/Jf_wKkV5dwQ?si=pYQfrxCY4kXzU8nO"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe> </th>
-
-        <th><img src="IMAGES/video 2.png" width="200"></th>
-
-        <th><img src="IMAGES/video 3.png" width="200"></th>
-      </tr>
-      <tr>
-        <td>
-          <center>Tänk på utrymmet </center>
-        </td>
-        <td>
-          <center>Lyft försiktigt</center>
-        </td>
-        <td>
-          <center>Kranbilar är varliga</center>
-        </td>
-      </tr>
-
-    </table>
-  </center>
-  <br></br>
-
-  <!--Footer?-->
+      <div> <form role="search" id="form">
+       <input type="search" id="query" name="q"
+        placeholder="Sök..."
+        aria-label="Search through site content">
+       <button>
+         <svg viewBox="0 0 1024 1024">
+           <path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+       </button>
+     </form>
+       </div> </div>
+       </nav>
 
 
+         
+   
+      
 
-  <ul>
-    <li><a href="index.html">Hem</a></li>
-    <li><a href="om-oss.html">Om oss</a></li>
-    <li><a href="produkter.html">Produkter</a></li>
-    <li><a href="kontakta-oss.html">Kontakta oss</a></li>
-  </ul>
-  </footer>
+      
+      <main>
+       
+       
+        <div class="myDiv" class="clearfix">
+          <H2 id="om-oss" class="clear:left">Såhär använder du våra maskiner</h2>
 
-  <footer>
-    <p>&copy; Skrot och Korn 2023</p>
-    <a href="https://www.facebook.com/skrotokorn">Facebook</a>
-    <a href="https://www.instagram.com/skrotokorn">Instagram</a>
-    <a href="https://www.linkedin.com/company/skrotokorn">LinkedIn</a>
-  </footer>
-  <footer>
+    <P><img class="bild floating" src="IMAGES/instruktionsvideo.png">
+          
+                    <p>Skrot och Korn AB är ett väletablerat företag
+                                med över 10 års erfarenhet av försäljning och 
+                                service av grävskopor, lyftkranar och lastbilar.
+                      Vi erbjuder ett brett utbud av maskiner från 
+                     ledande tillverkare, och vi kan alltid erbjuda dig 
+                      en maskin som passar dina behov och budget.</p>
+      
+
+        <div class="myDiv" class="clearfix"><iframe width="560" height="315" src="https://www.youtube.com/embed/Jf_wKkV5dwQ?si=pYQfrxCY4kXzU8nO"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe></div>
+      
+       <p>Tro inte att du är Pippi och klarar alla tunga lyft. Lyft istället lugnt, behärskat och galet med våra skeva instruktioner. 
+        Hipp hipp hura! Åh så härligt va?</p>
+          
+  </div>
+
+</main>
+<!--reklam eller aside-->    
+<aside>
+    <img class="annons " src="IMAGES/Grön Hus Ikon Bygg Logga.png">
+    <img class="annons" src="IMAGES/everythingiscanceled.png">
+    <img class="annons" src="IMAGES/for a good time.png">
+   
+</aside>
+
+<!--footer-->
+<footer>
+    
+    <div> <img src="IMAGES/skrot&korn Logo.png" alt="skrotokorn" height="35" class="logga"></div>
+
+    <div id="copyn">&copy; 2024 Micaela Reuterswärd</div>
+<div class="horisontellf" >
+    <div class="footerbox">Hitta hit<br><br>Tomtebodavägen<br>3A<br>118 98</div>
+    <div class="footerbox2">Vi erbjuder<br><br>Transport<br> Bortforsling</div>
+    <div class="footerbox3">Kontakta oss<br><br> &#9743; 000-000 00 00 <br>&#128386; skrotochkorn@mail.se</div>
+    <div class="footerbox4">Följ oss<br><br> facebook<br> insta<br> youtube</div>
+    </div>
+
+    <div class="betalningsmetod">
+    <div class="fotbox" > Betalningsbetoder </div>
+</div>
+</footer>
+</section>
 
 </body>
 

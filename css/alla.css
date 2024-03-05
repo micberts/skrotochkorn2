@@ -1,0 +1,283 @@
+
+
+/*-- holygrail menyn--*/
+
+
+
+    
+
+section{
+    display: flex;
+}
+section {
+    padding: 1em;
+    box-sizing: border-box;
+
+}
+.logga{
+    float:left;
+    margin-top: 2%;
+   margin: 2%;
+   transform: translate(-50%-50%);
+  
+}
+
+.pageheader {
+    background-image: url("../IMAGES/navbar\ 2.png");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+height: 300px;
+margin-block-end: auto;
+order: 1;
+    
+}
+.mainheader {
+    font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: antiquewhite;
+    position:absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    order: 1;
+}
+a {
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 10px;
+   }
+   a:hover{
+       background-color: rgba(49, 103, 76, 0.7);
+   }
+   li{
+       display: inline;
+   }
+   .menu {
+    float: right;
+    margin-top: 75%;
+    margin: auto;
+    transform: translate(-50%-50%);
+   /*slut på övre navbaren(headern)*/
+
+   }
+   .sidebar{
+    background-color: hsl(216,70%,80%);
+ order: 2;
+   }
+   /*söknapp varför går det inte att ändra top eller left när den är sticky ?*/
+ #search {
+    position:absolute; 
+    top:70%;
+    left: 10%;
+}
+#query {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
+  
+  ::placeholder {
+    color: #fff;
+    opacity: 0.7; 
+  }
+  button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+  }
+  
+  svg {
+    color: #fff;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+  }
+  /*söknapp*/
+   
+   main{
+    order:3;
+   }
+   h2{
+    font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(59, 38, 12);  
+   
+    
+}
+
+.myDiv{ 
+    background-color: rgb(240, 232, 222);    
+    text-align:start;
+    height:fit-content;
+    margin:auto;
+    padding-top: 0%;
+    padding-right: 3%;
+    padding-bottom: 7%;
+    padding-left: 3%;
+  
+    
+}
+
+
+
+    
+/*annonser*/
+aside{
+    background-color:  hsla(161, 53%, 43%, 0.605);
+    background: cover;
+    order:4;
+
+  
+
+}
+.annons {
+    width: 200px;
+    height: 200px;
+   
+    padding-right:5% ;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-top: 5%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin:auto;
+  
+   
+}
+/*footer*/
+    footer {
+        background-color: rgba(68, 148, 133, 0.238);
+        height: 250px;
+
+        order:5
+    }
+    .logga{
+        float:left;
+        margin-top: 2%;
+       margin: 2%;
+       transform: translate(-50%-50%);
+      
+    }
+   #copyn{
+    font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    border-bottom: 2px;
+    margin-top: 2%;
+   margin: auto;
+  
+       
+      
+   }
+    
+    .horisontellf
+    {
+        display: flex;
+        flex-direction: row;
+        float:left;
+        transform: translate(-50%-50%);
+        height:fit-content;
+   font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(59, 38, 12);
+    font-size: small;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+        
+        }
+        
+        .footerbox{
+        border:none;
+        padding: 4px;
+        width: 160px;
+        margin: 2px;
+        
+        
+        }
+        .footerbox2{
+            border:none;
+            padding: 4px;
+            width: 160px;
+            margin: 2px;
+           
+            }
+            .footerbox3{
+                border:none;
+                padding: 4px;
+                width: 160px;
+                margin: 2px;
+                
+                }
+                .footerbox4{
+                    border:none;
+                    padding: 4px;
+                    width: 160px;
+                    margin: auto
+                    
+            
+                    }
+                    .betalningsmetod{
+                        display: flex;
+        flex-direction: row;
+        float:inline-end;
+        transform: translate(-50%-50%);
+        height:fit-content;
+  
+    font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(59, 38, 12);
+    font-size: small;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+   
+   
+    
+                    }
+                    .fotbox{
+                        border:2px solid rgba(49, 103, 76, 0.7);
+                        padding: 4px;
+                        width: 500px;
+                        margin: 2px;
+                        border-color }
+/*footer*/
+
+body > * {
+    width: 80rem;
+    margin: 2rem auto;
+   }
+   section {
+    display: flex;
+   }
+   section > * {
+    padding:1em;
+    box-sizing: border-box;
+   }
+    .holygrail {
+     
+        flex-direction:row;
+        flex-wrap: wrap;
+    }
+    .holygrail .pageheader, .holygrail .mainheader,
+    .holygrail footer {
+        flex-basis: 100%;
+    }
+.holygrail .sidebar {
+    flex-basis: 20%;
+   }
+    
+    .holygrail main {
+        flex-grow:2;
+       flex-basis: 40%;
+      
+    }
+    .holygrail .aside{
+        flex-basis:25%;
+    }
+    
+

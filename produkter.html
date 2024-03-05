@@ -3,88 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Produkter</title>
+    <link rel="stylesheet" href="css/produkter.css">
+    <link href="css/alla.css" rel="stylesheet">
+   
 </head>
-<body>
-    <center>
-        <table border="0">
-            <tr>
-                <th><a href="startsida.html">startsida</a>|</th>
-                <th> <a href="produkter.html">produkter</a>|</th>
-                <th><a href="media.html">media</a>|</th>
-                <th><a href="kontaktaoss.html">kontakta oss</a></th>
-            </tr>
+<body onload="buildmenu()">
+    <script src="js/script.js"></script>
+
+    <section class="holygrail">
+        <!--fungerar som en div-->
+        <header class="pageheader"> <h1 class="mainheader">Skrot och Korn</h1>
+           <!--kan ha en header som ser annorlunda ut på så vis-->
+   
+      
+           <div> <img src="IMAGES/skrot&korn Logo.png" alt="skrotokorn" height="35" class="logga"></div>
+       <nav>
+           <ul class="menu">
+              <li>
+               <a href="index.html" target="index">startsida</a>
+              </li> 
+              <li><a href="produkter.html" target="index">produkter</a>
+              </li>
+              <li> <a href="media.html" target="index">media</a></li>
+              <li><a href="kontaktaoss.html" target="index">kontakta oss</a></li>
+           </ul>
+       </nav>
+     
+        </header>
         
-        </table>
-    <H1>Skrot och Korn</H1>
-    
-
-    <H2>Produkter</H2>
-    
-        <table border="0">
- 
-           <tr><th><img src="IMAGES/grävskopa.png" width="200"></th>
+      
+    <!--sökruta-->
+         <nav class="sidebar">
+   
+          <div class="mysticky"> <form role="search" id="form">
+           <input type="search" id="query" name="q"
+            placeholder="Sök..."
+            aria-label="Search through site content">
+           <button>
+             <svg viewBox="0 0 1024 1024">
+               <path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+           </button>
+         </form>
+           </div> </div>
+           </nav>
+   
           
-            <th><img src="IMAGES/Lyftkran.png" width="200"></th>
-            
-            <th><img src="IMAGES/kranbil.png" width="200"></th>
-        </tr>
-        <tr>
-            <td><center>Grävskopa 🛒 </center></td>
-            <td><center>Lyftkran🛒</center></td>
-            <td><center>Kranbil🛒</center></td></tr>
+          <main>
+           
 
-            </table>
-            <br></br>
+        
+        <div class="myDiv" class="clearfix">
+    <H2 id="om-oss" class="clear:left"> Produkter</H2>
+    
 
+    <div class="bildgrid">
+        <div class="grid-item"><img src="IMAGES/grävskopa.png" width="150"><br>Grävskopa 🛒</div>
+        <div class="grid-item"><img src="IMAGES/Lyftkran.png" width="150"><br>Lyftkran🛒</div>
+        <div class="grid-item"><img src="IMAGES/kranbil.png" width="150"><br>Kranbil🛒</div>
+    </div>
+    </div>
 
-    <table border="1">
-        <tr>
-            <th>Produkt</th>
-            <th>Namn</th>
-            <th>Pris exkl. moms</th>
-            <th>Pris inkl.moms</th>
-            <th>Info</th>
-            
-            
-        </tr>
-        <tr> 
-            <td>Grävskopa</td>
-            <td>Grävskopa 200</td>
-            <td><center>120 000 kr</center></td>
-            <td><center>150 000 kr</center></td>
-            <td>
-                <ul><li>Vikt:12 ton</li>
-            <li>Grävdjup: 6 meter</li>
-            <li>Motor: 120 hk</li></ul>
-            </td> 
-        </tr>
-        <tr>
-            <td><center>Lyftkran</center></td>
-            <td><center>Lyftkran 374S</center></td>
-            <td><center>200 000 kr</center></td>
-            <td><center>250 000 kr</center></td>
-            <td> <ul><center><li>Lyftkapacitet:20 ton</li></center>
-                    <li>Räckvidd: 30 meter</li>
-                    <li>Motor: 150 hk</li></ul>
+    
 
-            </td>
-        </tr>
-        <!--Varför går inte det att centrera Lyftkransinfo?-->
-        <tr>
-            <td><center>Kranbil</center></td>
-            <td><center>Kranbil 300</center></td>
-            <td><center>300 000 kr</center></td>
-            <td><center>375 000kr</center></td>
-            <td> <ul><li>Lastvikt: 30 ton</li>
-                <li>Motor: 200 hk</li></ul>
+    <div class="w3grid">
+        <div class="grid-item">Produkt</div>
+        <div class="grid-item">Namn</div>
+        <div class="grid-item">Pris exkl. moms</div>  
+        <div class="grid-item">Pris inkl. moms</div>
+        <div class="grid-item">Info</div>
+        <div class="grid-item">Grävskopa</div>  
+        <div class="grid-item">Grävskopa 200</div>
+        <div class="grid-item">120 000 kr</div>
+        <div class="grid-item">150 000 kr</div>
+        <div class="grid-item">Vikt 12 ton  Grävdjup 6 meter<br> Motor 120 hk</div> 
+        <div class="grid-item">Lyftkran</div> 
+        <div class="grid-item">Lyftkran 374S</div> 
+        <div class="grid-item">200 000 kr</div> 
+        <div class="grid-item">250 000 kr</div> 
+        <div class="grid-item">Lyftkapacitet 20 ton Räckvidd 30 meter Motor 150 hk </div> 
+        <div class="grid-item">Kranbil</div> 
+        <div class="grid-item">Kranbil 300</div> 
+        <div class="grid-item">300 000 kr</div> 
+        <div class="grid-item">375 000 kr</div> 
+        <div class="grid-item">Lastvikt 30 ton Motor 200 hk</div>
+          
+      </div>
 
-        </td>
-        </tr>
-        </table>
-    </center>
-
-        <p>&copy; 2024 Micaela Reuterswärd</p>
-
-</body>
-</html>
+       
+    </main>
+    <!--reklam eller aside-->    
+    <aside>
+        <img class="annons " src="IMAGES/Grön Hus Ikon Bygg Logga.png">
+        <img class="annons" src="IMAGES/everythingiscanceled.png">
+        <img class="annons" src="IMAGES/for a good time.png">
+       
+    </aside>
+    
+    <!--footer-->
+    <footer>
+        
+        <div> <img src="IMAGES/skrot&korn Logo.png" alt="skrotokorn" height="35" class="logga"></div>
+    
+        <div id="copyn">&copy; 2024 Micaela Reuterswärd</div>
+    <div class="horisontellf" >
+        <div class="footerbox">Hitta hit<br><br>Tomtebodavägen<br>3A<br>118 98</div>
+        <div class="footerbox2">Vi erbjuder<br><br>Transport<br> Bortforsling</div>
+        <div class="footerbox3">Kontakta oss<br><br> &#9743; 000-000 00 00 <br>&#128386; skrotochkorn@mail.se</div>
+        <div class="footerbox4">Följ oss<br><br> facebook<br> insta<br> youtube</div>
+        </div>
+    
+        <div class="betalningsmetod">
+        <div class="fotbox" > Betalningsbetoder </div>
+    </div>
+    </footer>
+    </section>
+    
+    </body>
+    </html>
